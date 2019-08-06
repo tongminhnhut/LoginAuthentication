@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+            app:layout_constraintGuide_percent="0.6"
+            android:orientation="horizontal"
+            android:id="@+id/guidelineCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineCenter"
+            android:textColor="@android:color/white"
+            android:background="@drawable/background_button_facebook_press"
+            android:text="Facebook"
+            android:id="@+id/btnFacebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/txt"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/btnFacebook"
+            android:text="---------- or ----------"
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+    <Button
+            android:visibility="gone"
+            android:id="@+id/btnnLogoutFacebook"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineCenter"
+            android:textColor="@android:color/white"
+            android:background="@drawable/background_button_facebook_press"
+            android:text="Logout Facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt"
+            android:background="@drawable/background_button_google"
+            android:text="Google"
+            android:id="@+id/btnGoogle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt"
+            android:background="@drawable/background_button_google"
+            android:text="Logout Google"
+            android:id="@+id/btnLogoutGoogle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

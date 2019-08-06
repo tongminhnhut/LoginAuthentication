@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoginDemo</string>
+    <string name="sha1">ga0RGNYHvNM5d0SLGQfpQWAPGJ8=</string>
+    <string name="facebook_id">2329738927267403</string>
+    <string name="fb_login_protocol_scheme">fb2329738927267403</string>
+
+    <!--<string name="client_id">1025562117972-1r8ohanjeh8tu1nsfpuplp2u7719stvu.apps.googleusercontent.com</string>-->
+    <string name="client_secret">23DuLJcT9tUvFRqoeb7bJDfQ</string>
+
+</resources>
