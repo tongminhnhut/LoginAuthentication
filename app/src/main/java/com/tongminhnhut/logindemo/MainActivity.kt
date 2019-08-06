@@ -208,7 +208,7 @@ class MainActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-                    Log.d("PPPPP", "signInWithCredential:success")
+                    Log.d("PPPPPPPPP", "signInWithCredential:success")
                     val user = firebaseAuth.currentUser?.displayName
                     Toast.makeText(this@MainActivity, "Login google: "+user, Toast.LENGTH_SHORT).show()
                     btnGoogle.visibility = View.INVISIBLE
